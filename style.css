@@ -1,0 +1,680 @@
+
+/*black rgb(0,0,0), grey rgb(158,158,158), white rgb(247,247,247), purple rgb(124,0,124), 
+grey #ddd, blue rgb(148,196,222), shaded-blue rgb(97, 143, 168)*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Merriweather', serif;
+}
+
+a {
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(133, 133, 133, 0.493);
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+body {
+    background-color: rgb(247,247,247);
+    padding-top: 70px;
+}
+
+
+/*HEADER*/
+header {
+    background-color: rgb(148,196,222);
+    color: black;
+    padding: 20px;
+    width: 100%;
+    
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    /*border-bottom-left-radius: 50px;*/
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header a:hover {
+    color: rgb(97, 143, 168);
+}
+
+.LeftNav {
+    display: flex;
+    justify-content: start;
+    min-width: 40%;
+    flex-wrap: wrap;
+
+    padding-left: 4%;
+}
+
+.RightNav {
+    display: flex;
+    justify-content: end;
+
+    min-width: 40%;
+    flex-wrap: wrap;
+    flex: 1;
+
+    font-size: x-large;
+
+    padding-right: 5%;
+}
+
+.navA {
+    font-weight: bold;
+    color: white;
+    margin: 5px;
+}
+
+.RightNavALogIn {
+    margin-right: 20px;
+}
+
+.Nav {
+    max-width: fit-content;
+}
+
+
+.NavCities {
+    display: none;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: rgb(247,247,247);
+    position: absolute;
+}
+
+.NavCities a {
+    display: block;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 8px;
+
+    font-size: 80%;
+}  
+
+.NavCities a:hover {
+    background-color: #ddd;
+    border-radius: 7px;
+}
+
+.Nav:hover .NavCities {
+    display: block;
+}
+
+.fas.fa-home {
+    font-size: 40px;
+}
+
+.fas.fa-user-circle {
+    font-size: 40px;
+}
+
+/*MAIN CONTENT*/
+.main {
+    margin-top: 30px;
+}
+
+.main h1 {
+    margin-top: 5%;
+    font-style: italic;
+}
+
+.IndexCitiesBox {
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.IndexCitiesA:hover {
+    color: black;
+}
+
+.IndexCities {
+    width: 80%;
+    max-width: 385px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.IndexCities img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.IndexCitiesText {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.IndexCitiesHeadline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.IndexCitiesHeadline h2 {
+    margin-left: 15px;
+    font-size: 200%;
+    white-space: nowrap;
+}
+
+.indexHeadlineNoStar {
+    display: flex;
+}
+
+.indexStars {
+    font-size: 170%;
+
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.fa.fa-star.checked {
+    color: rgb(240, 216, 3);
+}
+
+.far.fa-star {
+    color: rgb(102, 102, 102);
+}
+
+/*#ScrollImgs {
+    background-image: url(./Tokyo/tokyoSakuraWideImg.jpg);
+    background-repeat: no-repeat;
+    width: 90%;
+    height: ;
+    border: solid red;
+}*/
+
+.main-cities {
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+.CitiesContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ScrollImgs {
+    margin-top: 20px;
+    width: 90%;
+}
+
+.ScrollImgs img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.pDoubleBoxes {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.pDoubleBox {
+    border-radius: 10px;
+    border: solid rgb(202, 182, 155) 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.pDoubleBox1 {
+    width: 55%;
+    padding: 17px;
+    min-width: 300px;
+    margin-right: 2%;
+    margin-top: 50px;
+}
+
+.pDoubleBox2 {
+    width: 32%;
+    padding: 17px;
+    margin-top: 50px;
+}
+
+.CitiesFacts li {
+    list-style: inside;
+}
+
+.CitiesFacts {
+    margin-top: 5px;
+    line-height: 170%;
+}
+
+.SitesCitiesBox {
+    width: 90%;
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.SitesCitiesA:hover {
+    color: black;
+}
+
+.SitesCities {
+    width: 30%;
+    max-width: 385px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    height: fit-content;
+}
+
+.SitesCities img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.SitesCitiesText {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.SitesCitiesHeadline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fas.fa-heart {
+    font-size: xx-large;
+    color: rgb(148,196,222);
+}
+
+.fas.fa-heart:hover {
+    color: rgb(214, 61, 125);
+}
+
+.SitesCitiesHeadline h2 {
+    margin-left: 15px;
+    font-size: 200%;
+    white-space: nowrap;
+}
+
+.SitesHeadlineNoStar {
+    display: flex;
+}
+
+.SitesStars {
+    font-size: 170%;
+
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.fa.fa-star.checked {
+    color: rgb(240, 216, 3);
+}
+
+.far.fa-star {
+    color: rgb(102, 102, 102);
+}
+
+.mainLogIn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logInArea {
+    width: 30%;
+    height: fit-content;
+
+    border: solid rgb(202, 182, 155) 3px;
+    margin-top: 40px;
+
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUpHeadline {
+    margin-top: 40px;
+}
+
+.logInHeadline {
+    margin-top: 25px;
+}
+
+.logInForms {
+    width: fit-content;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.likedStuffDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.likedStuffDiv h2 {
+    font-size: 3vw;
+}
+
+.likedStuff {
+    height: 13vw;
+    width: 50vw;
+    min-width: 500px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    font-size: 1.2vw;
+}
+
+.likedStuff img {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.likedStuff div {
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+.likedStuff p {
+    margin-top: 2px;
+}
+
+.likedStuffDiv a:hover {
+    color: rgb(0,0,0);
+}
+
+/*FOOTER*/
+footer {
+    background-color: rgb(0,0,0);
+    padding-top: 20px;
+    padding-right: 2%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    margin-top: 45px;
+    color: rgb(247,247,247);
+    
+    position: static;
+    left: 0%;
+    bottom: 0%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+footer h1 {
+    font-size: 50px;
+}
+
+footer ul {
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 2%;
+    line-height: 30px;
+}
+
+footer a {
+    color: rgb(247,247,247);
+}
+
+footer a:hover {
+    color: rgb(148,196,222);
+}
+
+footer i {
+    font-size: 35px;
+}
+
+.footerTitle {
+    font-size: 40px;
+    text-align: start;
+}
+
+.fAbout, .fSocial, .fContact {
+    margin-right: 35px;
+}
+
+.fSocialA {
+    font-size: 25px;
+}
+
+/*Phone*/
+@media (max-width: 400px) {
+    header, .LeftNav, .RightNav {
+        font-size: 5vw;
+
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .RightNav {
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    .LeftNav {
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    body {
+        margin-top: 65px;
+    }
+
+    .LeftNav {
+        padding-right: 5%;
+    }
+
+    .RightNav {
+        padding-left: 5%;
+    }
+
+    .IndexCitiesHeadline h2 {
+        white-space: normal;
+        font-size: 8vw;
+    }
+
+    .pDoubleBox {
+        width: 90%;
+        min-width: 0px;
+    }
+}
+
+/*Flexing .RightNav*/
+@media (min-width: 400px) and (max-width: 455.5px) {
+    header, .LeftNav, .RightNav {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    body {
+        margin-top: 65px;
+    }
+
+    header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .RightNav {
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+
+    .LeftNav {
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 4%;
+        margin-left: 4%;
+    }
+}
+
+/*Changing flex-direction on footer*/
+@media (max-width: 532px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .fSocial, .fAbout {
+        margin-top: 30px;
+    }
+}
+
+/*In between iPad and phone*/
+@media (max-width: 600px) and (min-width: 456px) {
+    header, .LeftNav, .RightNav {
+        flex-direction: row;
+    }
+
+    .RightNav {
+        justify-content: end;
+    }
+
+    .likedStuff {
+      width: 90vw;
+      margin-left: 0;
+      margin-top: 2%;
+      font-size: 10px;
+    }
+
+    .likedStuffDiv {
+        justify-content: center;
+    }
+}
+
+ /*Platta: */
+@media (min-width: 600px) {
+    header, .LeftNavx, .RightNav {
+        flex-direction: row;
+    }
+
+    .LeftNavA {
+        margin-right: 15px;
+    }
+
+    .pDoubleBoxes {
+        justify-content: center;
+    }
+
+    .fSocial {
+        margin-right: 5%;
+    }
+}
+
+/* Laptop: */
+@media (min-width: 1000px) {
+    .LeftNavA {
+        margin-right: 80px;
+    }
+
+    .pDoubleBoxes {
+        justify-content: space-between;
+    }
+
+    .pDoubleBox2 {
+        font-size: 1.7vw;
+    }
+
+    footer {
+        justify-content: start;
+        padding-left: 15px;
+    }
+    
+    .fAbout, .fSocial {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    
+    .fContact {
+        margin-left: 1.8%;
+    }
+}
+
+/* 4k: */
+@media (min-width: 2000px) {
+    .LeftNavA {
+        margin-right: 100px;
+    }
+
+    .pDoubleBox2 {
+        font-size: 20px;
+    }
+}
